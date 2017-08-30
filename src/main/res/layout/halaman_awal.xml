@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01796f"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="KPSP"
+        android:textColor="#ffa500"
+        android:gravity="center_horizontal"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="mobile"
+        android:textColor="#dbd7d2"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_alignLeft="@+id/btnInputDataBaru"
+        android:layout_alignStart="@+id/btnInputDataBaru"
+        android:layout_marginLeft="86dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="72dp" />
+
+    <Button
+        android:id="@+id/btnInputDataBaru"
+        android:layout_width="185dp"
+        android:layout_height="66dp"
+        android:textSize="16dp"
+        android:text="INPUT DATA BARU"
+        android:background="@drawable/button_states"
+        android:textColor="#666e7b"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnRiwayat"
+        android:layout_width="185dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="79dp"
+        android:textColor="#666e7b"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="RIWAYAT"
+        android:background="@drawable/button_states"
+        android:layout_below="@+id/btnInputDataBaru"
+        android:layout_alignStart="@+id/btnInputDataBaru"
+        android:layout_alignEnd="@+id/btnInputDataBaru" />
+
+
+
+
+</RelativeLayout>

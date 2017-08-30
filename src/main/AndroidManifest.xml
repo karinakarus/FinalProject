@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.karindra.kpsp">
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_InputData" />
+
+        <activity android:name=".Activity_Riwayat" />
+        <activity android:name=".Activity_PilihUmur"/>
+        <activity android:name=".Activity_RiwayatDetail" />
+        <activity android:name=".Activity_RincialHasil" />
+        <activity android:name=".KPSP3BULAN" />
+        <activity android:name=".KPSP6BULAN" />
+        <activity android:name=".KPSP12BULAN" />
+        <activity android:name=".KPSP15BULAN" />
+        <activity android:name=".KPSP18BULAN" />
+        <activity android:name=".KPSP21BULAN" />
+        <activity android:name=".KPSP24BULAN" />
+        <activity android:name=".KPSP30BULAN" />
+        <activity android:name=".KPSP36BULAN" />
+        <activity android:name=".KPSP42BULAN" />
+        <activity android:name=".KPSP48BULAN" />
+        <activity android:name=".KPSP54BULAN" />
+        <activity android:name=".KPSP60BULAN" />
+        <activity android:name=".KPSP66BULAN" />
+        <activity android:name=".KPSP72BULAN" />
+        <activity android:name=".KPSP9BULAN"></activity>
+    </application>
+
+</manifest>

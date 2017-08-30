@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#01796f"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="INPUT DATA BARU"
+            android:textColor="#ffa500"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtNamaAnak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Nama Anak"
+            android:textColor="#F9FBF8"
+            android:textSize="20dp"
+            android:layout_above="@+id/edtNamaAnak"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp" />
+
+        <EditText
+            android:id="@+id/edtNamaAnak"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_above="@+id/edtTglLahir"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/rounded_eddittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtTglLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnHitungUmur"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="5dp"
+            android:text="Tanggal Lahir"
+            android:textColor="#F9FBF8"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtTglLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rounded_eddittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/btnHitungUmur" />
+
+        <TextView
+            android:id="@+id/txtUmur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/edtUmur"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp"
+            android:paddingLeft="5dp"
+            android:text="Umur"
+            android:textColor="#F9FBF8"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtUmur"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_above="@+id/txtBeratBadan"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/rounded_eddittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtBeratBadan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edtBeratBadan"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="14dp"
+            android:paddingLeft="5dp"
+            android:text="Berat Badan"
+            android:textColor="#F9FBF8"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtBeratBadan"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_above="@+id/btnSimpan"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="41dp"
+            android:background="@drawable/rounded_eddittext"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnKeluar"
+            android:layout_alignBottom="@+id/btnKeluar"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/txtUmur"
+            android:background="@drawable/button_states"
+            android:text="SIMPAN"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnKeluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginLeft="42dp"
+            android:background="@drawable/button_states"
+            android:text="KELUAR"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnHitungUmur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edtTglLahir"
+            android:layout_alignBottom="@+id/edtTglLahir"
+            android:layout_alignParentEnd="true"
+           android:background="@drawable/button_states"
+            android:text="HITUNG!"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtNomor"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/edtNamaAnak"
+            android:layout_marginBottom="52dp"
+            android:layout_toEndOf="@+id/txtBeratBadan"
+            android:background="@drawable/rounded_eddittext"
+            android:ems="10"
+            android:inputType="number"
+            android:text=""
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/edtNomor"
+            android:paddingLeft="5dp"
+            android:text="NO"
+            android:textColor="#F9FBF8"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
